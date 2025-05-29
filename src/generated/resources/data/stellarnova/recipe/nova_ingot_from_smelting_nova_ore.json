@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.5,
+  "group": "nova_ingot",
+  "ingredient": {
+    "item": "stellarnova:nova_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "stellarnova:nova_ingot"
+  }
+}

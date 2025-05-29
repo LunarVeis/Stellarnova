@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "charged=false": {
+      "model": "stellarnova:block/starseer_essence_uncharged"
+    },
+    "charged=true": {
+      "model": "stellarnova:block/starseer_essence_charged"
+    }
+  }
+}

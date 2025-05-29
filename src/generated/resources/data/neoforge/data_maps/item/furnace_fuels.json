@@ -1,0 +1,10 @@
+{
+  "values": {
+    "stellarnova:stellar_charcoal": {
+      "burn_time": 2400
+    },
+    "stellarnova:stellar_coal": {
+      "burn_time": 2400
+    }
+  }
+}

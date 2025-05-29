@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_starseer_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stellarnova:starseer_essence"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "stellarnova:nova_ingot_from_starseer"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_starseer_essence"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "stellarnova:nova_ingot_from_starseer"
+    ]
+  }
+}

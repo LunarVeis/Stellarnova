@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "stellarnova:starseer_eye"
+    },
+    "N": {
+      "item": "stellarnova:nova_block"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "pattern": [
+    "ONO",
+    "NEN",
+    "ONO"
+  ],
+  "result": {
+    "count": 1,
+    "id": "stellarnova:stellarnova_catalyst"
+  }
+}

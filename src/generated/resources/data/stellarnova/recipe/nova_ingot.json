@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "stellarnova:nova_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "stellarnova:nova_ingot"
+  }
+}

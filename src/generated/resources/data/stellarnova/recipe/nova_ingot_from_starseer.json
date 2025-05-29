@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "stellarnova:starseer_essence"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "stellarnova:nova_ingot"
+  }
+}

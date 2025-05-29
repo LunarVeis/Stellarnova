@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "stellarnova:block/starseer_essence_uncharged"
+  }
+}

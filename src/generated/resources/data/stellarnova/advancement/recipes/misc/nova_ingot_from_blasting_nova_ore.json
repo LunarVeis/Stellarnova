@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_nova_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stellarnova:nova_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "stellarnova:nova_ingot_from_blasting_nova_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_nova_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "stellarnova:nova_ingot_from_blasting_nova_ore"
+    ]
+  }
+}

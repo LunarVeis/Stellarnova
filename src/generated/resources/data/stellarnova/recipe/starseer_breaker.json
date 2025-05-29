@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "E": {
+      "item": "stellarnova:starseer_eye"
+    },
+    "I": {
+      "item": "stellarnova:stellarnova_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "IEI",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "stellarnova:starseer_breaker"
+  }
+}
