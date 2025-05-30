@@ -39,22 +39,54 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
         //Tools/Shaped
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.NOVA_PICKAXE.get())
+                .pattern("NNN")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('N', ModItems.NOVA_INGOT.get()).define('S', Items.STICK)
+                .unlockedBy("has_nova_ingot", has(ModItems.NOVA_INGOT)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.NOVA_AXE.get())
+                .pattern("NN ")
+                .pattern("NS ")
+                .pattern(" S ")
+                .define('N', ModItems.NOVA_INGOT.get()).define('S', Items.STICK)
+                .unlockedBy("has_nova_ingot", has(ModItems.NOVA_INGOT)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.NOVA_HOE.get())
+                .pattern("NN ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('N', ModItems.NOVA_INGOT.get()).define('S', Items.STICK)
+                .unlockedBy("has_nova_ingot", has(ModItems.NOVA_INGOT)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.NOVA_SHOVEL.get())
+                .pattern(" N ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('N', ModItems.NOVA_INGOT.get()).define('S', Items.STICK)
+                .unlockedBy("has_nova_ingot", has(ModItems.NOVA_INGOT)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.NOVA_SWORD.get())
+                .pattern(" N ")
+                .pattern(" N ")
+                .pattern(" S ")
+                .define('N', ModItems.NOVA_INGOT.get()).define('S', Items.STICK)
+                .unlockedBy("has_nova_ingot", has(ModItems.NOVA_INGOT)).save(recipeOutput);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CHISEL.get())
                 .pattern("  I")
                 .pattern(" I ")
                 .pattern("S  ")
-                .define('I', Items.IRON_INGOT)
-                .define('S', Items.STICK)
+                .define('I', Items.IRON_INGOT).define('S', Items.STICK)
                 .unlockedBy("has_iron_ingot", has(Items.STICK))
                 .save(recipeOutput);
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.STARSEER_BREAKER.get())
                 .pattern("IEI")
                 .pattern(" S ")
                 .pattern(" S ")
-                .define('I', ModItems.STELLARNOVA_INGOT.get())
-                .define('E', ModItems.STARSEER_EYE.get())
-                .define('S', Items.STICK)
-                .unlockedBy("has_STELLARNOVA_ingot", has(ModItems.STELLARNOVA_INGOT))
+                .define('I', ModItems.STELLARNOVA_INGOT.get()).define('E', ModItems.STARSEER_EYE.get()).define('S', Items.STICK)
+                .unlockedBy("has_stellarnova_ingot", has(ModItems.STELLARNOVA_INGOT))
                 .save(recipeOutput);
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.STARSEER_EYE.get())
                 .pattern("SDS")
@@ -63,7 +95,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S', Items.STONE_BRICKS)
                 .define('D', Items.DIAMOND)
                 .define('E', Items.ENDER_EYE)
-                .unlockedBy("has_STELLARNOVA_ingot", has(ModItems.STELLARNOVA_INGOT))
+                .unlockedBy("has_stellarnova_ingot", has(ModItems.STELLARNOVA_INGOT))
                 .save(recipeOutput);
 
         //Blocks/Shaped
@@ -97,7 +129,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_nova_block", has(ModBlocks.NOVA_BLOCK)).save(recipeOutput);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.STELLARNOVA_INGOT.get(), 9)
                 .requires(ModBlocks.STELLARNOVA_BLOCK)
-                .unlockedBy("has_STELLARNOVA_block", has(ModBlocks.STELLARNOVA_BLOCK)).save(recipeOutput);
+                .unlockedBy("has_stellarnova_block", has(ModBlocks.STELLARNOVA_BLOCK)).save(recipeOutput);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.NOVA_INGOT.get())
                 .requires(ModBlocks.STARSEER_ESSENCE)
                 .unlockedBy("has_starseer_essence", has(ModBlocks.STARSEER_ESSENCE)).save(recipeOutput, "stellarnova:nova_ingot_from_starseer");

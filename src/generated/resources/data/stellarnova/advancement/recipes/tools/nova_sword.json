@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stellarnova_block": {
+    "has_nova_ingot": {
       "conditions": {
         "items": [
           {
-            "items": "stellarnova:stellarnova_block"
+            "items": "stellarnova:nova_ingot"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "stellarnova:stellarnova_ingot"
+        "recipe": "stellarnova:nova_sword"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_stellarnova_block"
+      "has_nova_ingot"
     ]
   ],
   "rewards": {
     "recipes": [
-      "stellarnova:stellarnova_ingot"
+      "stellarnova:nova_sword"
     ]
   }
 }
