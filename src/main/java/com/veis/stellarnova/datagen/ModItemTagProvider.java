@@ -6,6 +6,7 @@ import com.veis.stellarnova.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -28,6 +29,12 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ModTags.Items.CHARGE_ITEMS_TRANSMUTE)
                 .add(Items.DIAMOND)
                 .add(ModItems.NOVA_INGOT.get());
+
+        tag(ItemTags.SWORDS).add(ModItems.NOVA_SWORD.get());
+        tag(ItemTags.AXES).add(ModItems.NOVA_AXE.get());
+        tag(ItemTags.HOES).add(ModItems.NOVA_HOE.get());
+        tag(ItemTags.SHOVELS).add(ModItems.NOVA_SHOVEL.get());
+        tag(ItemTags.PICKAXES).add(ModItems.NOVA_PICKAXE.get());
 
     }
 }

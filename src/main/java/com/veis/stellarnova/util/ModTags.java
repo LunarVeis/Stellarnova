@@ -15,6 +15,10 @@ public class ModTags {
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(Stellarnova.MODID, name));
         }
+        public static final TagKey<Block> NEEDS_NOVA_TOOL = createTag("needs_nova_tool");
+        public static final TagKey<Block> NEEDS_STELLAR_TOOL = createTag("needs_stellar_tool");
+        public static final TagKey<Block> INCORRECT_FOR_NOVA_TOOL = createTag("incorrect_for_nova_tool");
+        public static final TagKey<Block> INCORRECT_FOR_STELLAR_TOOL = createTag("incorrect_for_stellar_tool");
     }
 
 

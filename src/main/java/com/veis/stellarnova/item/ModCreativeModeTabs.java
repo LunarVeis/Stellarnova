@@ -28,6 +28,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.STELLAR_CHARCOAL);
                         output.accept(ModItems.STELLAR_COAL);
                         output.accept(ModItems.STARSEER_BREAKER);
+
+
+                        output.accept(ModItems.NOVA_SWORD);
+                        output.accept(ModItems.NOVA_PICKAXE);
+                        output.accept(ModItems.NOVA_SHOVEL);
+                        output.accept(ModItems.NOVA_AXE);
+                        output.accept(ModItems.NOVA_HOE);
                     }).build());
     public static final Supplier<CreativeModeTab> STELLARNOVA_BLOCKS_TAB = CREATIVE_MODE_TAB.register("stellarnova_blocks_tab",
             () -> CreativeModeTab.builder()

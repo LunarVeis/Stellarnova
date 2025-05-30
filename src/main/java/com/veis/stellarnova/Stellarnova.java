@@ -2,6 +2,7 @@ package com.veis.stellarnova;
 
 import com.mojang.logging.LogUtils;
 import com.veis.stellarnova.block.ModBlocks;
+import com.veis.stellarnova.component.ModDataComponents;
 import com.veis.stellarnova.item.ModCreativeModeTabs;
 import com.veis.stellarnova.item.ModItems;
 import net.minecraft.client.Minecraft;
@@ -50,6 +51,7 @@ public class Stellarnova
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModDataComponents.register(modEventBus);
 
 
         NeoForge.EVENT_BUS.register(this);

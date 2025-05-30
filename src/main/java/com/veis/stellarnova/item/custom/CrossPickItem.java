@@ -1,6 +1,7 @@
 package com.veis.stellarnova.item.custom;
 
 import com.veis.stellarnova.item.ModItems;
+import com.veis.stellarnova.item.ModToolTiers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.InteractionResult;
@@ -9,21 +10,31 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class CrossPickItem extends Item {
+public class CrossPickItem extends PickaxeItem {
     public CrossPickItem(Properties properties) {
-        super(properties);
+        super(ModToolTiers.NOVA, properties);
     }
 
     @Override
     public boolean mineBlock(ItemStack stack, Level level, BlockState state, BlockPos pos, LivingEntity miningEntity) {
         BlockPos aboveBroken = pos.above();
+        BlockPos belowBroken = pos.below();
 
-        level.destroyBlock(aboveBroken, true);
+        if (!level.getBlockState(aboveBroken).isAir()) {
+            level.destroyBlock(aboveBroken, true);
+            stack.hurtAndBreak(1, miningEntity, stack.getEquipmentSlot());
+        }
+        if (!level.getBlockState(belowBroken).isAir()) {
+            level.destroyBlock(belowBroken, true);
+            stack.hurtAndBreak(1, miningEntity, stack.getEquipmentSlot());
+
+        }
 
         return super.mineBlock(stack, level, state, pos, miningEntity);
     }

@@ -10,11 +10,17 @@
   "item.stellarnova.nova_apple": "Nova Apple",
   "item.stellarnova.stellarnova_ingot": "Stellarnova Ingot",
   "item.stellarnova.nova_ingot": "Nova Ingot",
-  "item.stellarnova.starseer_eye": "Starseer Eye",
-  "item.stellarnova.starseer_breaker": "Starseer Breaker",
   "item.stellarnova.chisel": "Chisel",
   "item.stellarnova.stellar_charcoal": "Stellar Charcoal",
   "item.stellarnova.stellar_coal": "Stellar Coal",
+  "subcat1": "tools",
+  "item.stellarnova.nova_axe": "Nova Axe",
+  "item.stellarnova.nova_hoe": "Nova Hoe",
+  "item.stellarnova.nova_sword": "Nova Sword",
+  "item.stellarnova.nova_shovel": "Nova Shovel",
+  "item.stellarnova.nova_pickaxe": "Nova Pickaxe",
+  "item.stellarnova.starseer_eye": "Starseer Eye",
+  "item.stellarnova.starseer_breaker": "Starseer Breaker",
 
 
   "comment3": "creativetabs",
@@ -23,8 +29,8 @@
 
   "comment4": "tooltips",
   "tooltip.stellarnova.item_consume_repair": "§eSneak Right click with this item in your main hand and Nova Ingots in your offhand to repair.",
-  "tooltip.stellarnova.transmute_object.hold_shift": "§7Hold shift for more information.",
+  "tooltip.stellarnova.hold_shift": "§7Hold shift for more information.",
   "tooltip.stellarnova.transmute_object.shift_held_starseer": "§dThis item can be recharged using the Spacial Altar or by consuming Starseer Essence.",
-  "tooltip.stellarnova.crosspick_item,shift_held_breaker": "§dBreaking blocks will break the block above too. Right click will break a 3x3x3 block centered around the block you clicked."
+  "tooltip.stellarnova.crosspick_item.shift_held_breaker": "§dBreaking blocks will break the block above too. Right click will break a 3x3x3 block centered around the block you clicked."
 
 }
