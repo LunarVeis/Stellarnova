@@ -16,6 +16,18 @@ public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Stellarnova.MODID);
 
     //Resources
+    public static final DeferredItem<Item> SIGHTLESS_EYE = ITEMS.register("sightless_eye",
+            () -> new Item(new Item.Properties().fireResistant().rarity(Rarity.UNCOMMON)){
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    if(!Screen.hasShiftDown()){
+                        tooltipComponents.add(Component.translatable("tooltip.stellarnova.hold_shift"));
+                    } else {
+                        tooltipComponents.add(Component.translatable("tooltip.stellarnova.sightless_eye"));
+                    }
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+                });
     //Ores
     public static final DeferredItem<Item> NOVA_CLUSTER = ITEMS.register("nova_cluster",
             () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
@@ -52,11 +64,11 @@ public class ModItems {
     public static  final DeferredItem<Item> CHISEL = ITEMS.register("chisel",
             () -> new TransmuteItem(new Item.Properties().durability(64).rarity(Rarity.UNCOMMON)));
     public static final DeferredItem<Item> STARSEER_EYE = ITEMS.register("starseer_eye",
-            () -> new TransmuteItem(new Item.Properties().durability(300).fireResistant().setNoRepair().rarity(Rarity.RARE).craftRemainder(Items.ENDER_EYE)){
+            () -> new TransmuteItem(new Item.Properties().durability(30).fireResistant().setNoRepair().fireResistant().rarity(Rarity.RARE).craftRemainder(ModItems.SIGHTLESS_EYE.get())){
                 @Override
                 public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
                     if(!Screen.hasShiftDown()){
-                        tooltipComponents.add(Component.translatable("tooltip.stellarnova.transmute_object.hold_shift"));
+                        tooltipComponents.add(Component.translatable("tooltip.stellarnova.hold_shift"));
                     } else {
                         tooltipComponents.add(Component.translatable("tooltip.stellarnova.transmute_object.shift_held_starseer"));
                         tooltipComponents.add(Component.translatable("tooltip.stellarnova.item_consume_repair"));

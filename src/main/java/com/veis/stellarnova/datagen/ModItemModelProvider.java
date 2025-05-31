@@ -21,6 +21,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     basicItem(ModItems.NOVA_APPLE.get());
     basicItem(ModItems.STELLARNOVA_INGOT.get());
     basicItem(ModItems.STARSEER_EYE.get());
+    basicItem(ModItems.SIGHTLESS_EYE.get());
     basicItem(ModItems.STARSEER_BREAKER.get());
     basicItem(ModItems.STELLAR_CHARCOAL.get());
     basicItem(ModItems.STELLAR_COAL.get());
