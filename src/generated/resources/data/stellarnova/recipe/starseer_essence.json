@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:cobblestone"
+    },
+    {
+      "item": "stellarnova:starseer_eye"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "stellarnova:nova_ingot"
+    },
+    {
+      "item": "minecraft:gold_ingot"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "stellarnova:starseer_essence"
+  }
+}
