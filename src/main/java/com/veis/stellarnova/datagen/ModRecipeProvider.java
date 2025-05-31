@@ -26,14 +26,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         //Lists
         List<ItemLike> NOVA_SMELTABLES = List.of(ModBlocks.NOVA_ORE, ModItems.NOVA_CLUSTER, ModItems.NOVA_APPLE);
+        List<ItemLike> SIGHTLESS_SMELTABLES = List.of(ModItems.SIGHTLESS_EYE);
 
 
         //temp
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.NOVA_ORE.get())
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.STARSEER_ESSENCE.get())
                 .requires(Items.COBBLESTONE)
                 .requires(ModItems.STARSEER_EYE)
-                .requires(Items.IRON_NUGGET)
-                .requires(Items.GOLD_NUGGET)
+                .requires(Items.IRON_INGOT)
+                .requires(ModItems.NOVA_INGOT)
+                .requires(Items.GOLD_INGOT)
                 .unlockedBy("has_starseer_eye", has(ModItems.STARSEER_EYE.get()))
                 .save(recipeOutput);
 
@@ -137,6 +139,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         //Smelting/All
         oreSmelting(recipeOutput, NOVA_SMELTABLES, RecipeCategory.MISC, ModItems.NOVA_INGOT, 0.5f, 200, "nova_ingot");
         oreBlasting(recipeOutput, NOVA_SMELTABLES, RecipeCategory.MISC, ModItems.NOVA_INGOT, 0.5f, 200, "nova_ingot");
+        oreSmelting(recipeOutput, SIGHTLESS_SMELTABLES, RecipeCategory.MISC, ModItems.STARSEER_EYE, 0.5f, 200, "STARSEER_EYE");
+
     }
         //Smelting/Methods
         protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,

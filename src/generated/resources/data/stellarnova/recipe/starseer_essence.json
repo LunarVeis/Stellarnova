@@ -9,14 +9,17 @@
       "item": "stellarnova:starseer_eye"
     },
     {
-      "item": "minecraft:iron_nugget"
+      "item": "minecraft:iron_ingot"
     },
     {
-      "item": "minecraft:gold_nugget"
+      "item": "stellarnova:nova_ingot"
+    },
+    {
+      "item": "minecraft:gold_ingot"
     }
   ],
   "result": {
     "count": 1,
-    "id": "stellarnova:nova_ore"
+    "id": "stellarnova:starseer_essence"
   }
 }

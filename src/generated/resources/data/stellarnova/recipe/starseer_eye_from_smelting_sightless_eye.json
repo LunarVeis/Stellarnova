@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.5,
+  "group": "STARSEER_EYE",
+  "ingredient": {
+    "item": "stellarnova:sightless_eye"
+  },
+  "result": {
+    "count": 1,
+    "id": "stellarnova:starseer_eye"
+  }
+}
