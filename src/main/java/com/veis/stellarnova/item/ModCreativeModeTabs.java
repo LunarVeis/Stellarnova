@@ -25,6 +25,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CHISEL);
                         output.accept(ModItems.STARSEER_EYE);
                         output.accept(ModItems.NOVA_APPLE);
+                        output.accept(ModItems.BAT_WING);
                         output.accept(ModItems.STELLAR_CHARCOAL);
                         output.accept(ModItems.STELLAR_COAL);
                         output.accept(ModItems.STARSEER_BREAKER);

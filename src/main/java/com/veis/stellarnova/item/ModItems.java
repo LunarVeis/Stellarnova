@@ -39,6 +39,8 @@ public class ModItems {
     //Food
     public static final DeferredItem<Item> NOVA_APPLE = ITEMS.register("nova_apple",
             () -> new Item(new Item.Properties().food(ModFoodProperties.NOVA_APPLE)));
+    public static final DeferredItem<Item> BAT_WING = ITEMS.register("bat_wing",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.BAT_WING)));
     //Fuels
     public static final DeferredItem<Item> STELLAR_COAL = ITEMS.register("stellar_coal",
             () -> new Item(new Item.Properties()));

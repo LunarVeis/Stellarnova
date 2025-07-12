@@ -26,6 +26,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     basicItem(ModItems.STELLAR_CHARCOAL.get());
     basicItem(ModItems.STELLAR_COAL.get());
     basicItem(ModItems.CHISEL.get());
+    basicItem(ModItems.BAT_WING.get());
 
     handheldItem(ModItems.NOVA_AXE);
     handheldItem(ModItems.NOVA_HOE);
